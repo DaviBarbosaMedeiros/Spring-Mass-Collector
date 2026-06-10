@@ -34,3 +34,30 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+
+nav:
+  - Home: index.md
+
+  - Project:
+      - Introduction: introduction.md
+      - Timeline: timeline.md
+      - Budget: budget.md
+
+  - Development:
+      - Implemented: development/implemented.md
+      - Finalization: development/finalization.md
+
+  - Mechanical Design:
+      - Initial Model: mechanical/initial-model.md
+      - 3D Development: mechanical/3d-development.md
+      - First Prototype: mechanical/prototype.md
+
+  - Electronics:
+      - Overview: electronics/overview.md
+      - Sensor Test: electronics/sensor-test.md
+
+  - Software:
+      - Code Structure: software/code.md
+      - Bluetooth: software/bluetooth.md
+      - Components: software/components.md
+      - Future Work: software/future-work.md

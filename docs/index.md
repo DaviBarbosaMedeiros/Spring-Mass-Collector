@@ -1,17 +1,24 @@
-# Badcome to MkDocs
+# Spring-Mass Analyzer
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Open-source device for spring-mass experiment analysis.
 
-## Commands
+## Project Overview
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+This project aims to develop a low-cost device capable of analyzing data obtained from a spring-mass experiment using:
 
-## Project layout
+- ESP32
+- Distance Sensor
+- LCD Display
+- 3D Printed Structure
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+The complete system is designed to be fully open source.
+
+## Documentation Sections
+
+- Introduction
+- Development
+- Timeline
+- Budget
+- Mechanical Design
+- Electronics
+- Software
