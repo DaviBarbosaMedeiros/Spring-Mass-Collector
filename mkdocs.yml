@@ -1,0 +1,36 @@
+site_name: Spring-Mass Colector Documentation
+site_url: https://davispringmass.io
+theme:
+  logo: assets/LogoFismat.png
+  favicon: assets/LogoFismatGraph.png
+  font:
+    text: Merriweather Sans
+    code: Red Hat Mono
+  name: material
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: white
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+        
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences

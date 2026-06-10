@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+mkdocs-env/
+venv/
+.venv/
+
+# MkDocs build
+site/
+
+# Linux
+.DS_Store
