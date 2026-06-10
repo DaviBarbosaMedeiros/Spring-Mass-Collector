@@ -4,12 +4,12 @@ As a proof of concept, a simple setup was made, where it is only possible to mea
 
 ## Electronic Schematic
 
-![Electronic Schematic](assets/fig1.png)
+![Electronic Schematic](../assets/images/fig1.png)
 
 *Figure 1 – Electronic wiring diagram.*
 
 ## Prototype Structure
 
-![Prototype Structure](assets/fig2.png)
+![Prototype Structure](../assets/images/fig2.png)
 
 *Figure 2 – Mechanical prototype structure.*

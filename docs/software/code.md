@@ -22,16 +22,4 @@ The data are stored as:
 
 ```cpp
 data[2][n]
-
----
-
-# software/bluetooth.md
-
-```markdown
-# Bluetooth Communication
-
-The collected data are transmitted through Bluetooth to the Serial Bluetooth Terminal application.
-
-![Bluetooth Terminal](assets/fig11.png)
-
-*Figure 11 – Bluetooth application.*
+```
