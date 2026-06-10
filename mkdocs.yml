@@ -49,7 +49,6 @@ nav:
   - Home: index.md
 
   - Project:
-      - Introduction: introduction.md
       - Timeline: timeline.md
       - Budget: budget.md
 
