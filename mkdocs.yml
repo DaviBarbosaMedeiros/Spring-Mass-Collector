@@ -1,72 +1,156 @@
-site_name: Spring-Mass Colector Documentation
-site_url: https://davispringmass.github.io
+site_name: Spring-Mass Collector
+site_description: Open-source documentation for a low-cost data acquisition system for damped spring-mass experiments.
+site_author: Davi Barbosa de Medeiros
+site_url: https://davibarbosamedeiros.github.io/Springmass-Instructions/
+
+repo_name: DaviBarbosaMedeiros/Springmass-Instructions
+repo_url: https://github.com/DaviBarbosaMedeiros/Springmass-Instructions
+
+copyright: Copyright &copy; 2026 Davi Barbosa de Medeiros
+
 theme:
+  name: material
+  language: en
+
   logo: assets/LogoFismat.png
   favicon: assets/LogoFismatGraph.png
+
   font:
     text: Merriweather Sans
     code: Red Hat Mono
-  name: material
-  palette: 
 
-    # Palette toggle for light mode
+  palette:
     - scheme: default
       primary: blue grey
       accent: deep orange
       toggle:
-        icon: material/brightness-7 
+        icon: material/weather-night
         name: Switch to dark mode
 
-    # Palette toggle for dark mode
     - scheme: slate
-      primary: white
-      accent: deep purple
+      primary: blue grey
+      accent: deep orange
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
 
+  icon:
+    repo: fontawesome/brands/github
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+
+plugins:
+  - search
+
 markdown_extensions:
-  - md_in_html
   - admonition
   - attr_list
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - md_in_html
+  - tables
+  - footnotes
+
+  - pymdownx.details
+
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+  - pymdownx.inlinehilite
+
+  - pymdownx.snippets
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+  - pymdownx.arithmatex:
+      generic: true
+  
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
 extra_javascript:
-  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
-  - javascript/mermaid-init.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/DaviBarbosaMedeiros/Springmass-Instructions
+      name: GitHub Repository
 
 nav:
   - Home: index.md
 
-  - Project:
-      - Timeline: timeline.md
-      - Budget: budget.md
+  - Getting Started:
+      - Overview: getting-started/overview.md
+      - How the System Works: getting-started/how-it-works.md
+      - Quick Start: getting-started/quick-start.md
 
-  - Development:
-      - Implemented: development/implemented.md
-      - Finalization: development/finalization.md
+  - Theory:
+      - Spring-Mass System: theory/spring-mass-system.md
+      - Damped Oscillator: theory/damped-oscillator.md
+      - Data Analysis: theory/data-analysis.md
+
+  - Hardware:
+      - Overview: hardware/overview.md
+      - Components: hardware/components.md
+      - Distance Sensor: hardware/distance-sensor.md
+      - LCD and Buttons: hardware/interface.md
+      - Circuit: hardware/circuit.md
+      - Calibration: hardware/calibration.md
 
   - Mechanical Design:
-      - Initial Model: mechanical/initial-model.md
-      - 3D Development: mechanical/3d-development.md
-      - First Prototype: mechanical/prototype.md
-
-  - Electronics:
-      - Overview: electronics/overview.md
-      - Sensor Test: electronics/sensor-test.md
+      - Overview: mechanical-design/overview.md
+      - Structure: mechanical-design/structure.md
+      - 3D Printed Parts: mechanical-design/3d-printed-parts.md
+      - Assembly: mechanical-design/assembly.md
 
   - Software:
-      - Code Structure: software/code.md
-      - Bluetooth: software/bluetooth.md
-      - Components: software/components.md
-      - Future Work: software/future-work.md
+      - Overview: software/overview.md
+      - Firmware Architecture: software/architecture.md
+      - Code Structure: software/code-structure.md
+      - Operation Modes: software/operation-modes.md
+      - Data Storage: software/data-storage.md
+      - Bluetooth Transfer: software/bluetooth-transfer.md
+
+  - Experiments:
+      - Overview: experiments/overview.md
+      - Data Collection: experiments/data-collection.md
+      - Data Transfer: experiments/data-transfer.md
+      - Results: experiments/results.md
+
+  - Developer Guide:
+      - Setup: developer-guide/setup.md
+      - Project Structure: developer-guide/project-structure.md
+      - Build and Deploy: developer-guide/build-and-deploy.md
+      - Troubleshooting: developer-guide/troubleshooting.md
+
+  - Project:
+      - Requirements: project/requirements.md
+      - Timeline: project/timeline.md
+      - Budget: project/budget.md
+      - Future Work: project/future-work.md
