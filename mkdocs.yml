@@ -99,7 +99,7 @@ extra_javascript:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/DaviBarbosaMedeiros/Springmass-Instructions
+      link: https://davibarbosamedeiros.github.io/Spring-Mass-Collector/
       name: GitHub Repository
 
 nav:
