@@ -11,4 +11,4 @@ venv/
 site/
 
 # Linux
-.DS_Store
+.DS_Storesite/
