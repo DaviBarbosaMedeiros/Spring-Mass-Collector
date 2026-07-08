@@ -1,10 +1,10 @@
 site_name: Spring-Mass Collector
 site_description: Open-source documentation for a low-cost data acquisition system for damped spring-mass experiments.
 site_author: Davi Barbosa de Medeiros
-site_url: https://davibarbosamedeiros.github.io/Springmass-Instructions/
+site_url: https://davibarbosamedeiros.github.io/Spring-Mass-Collector/
 
 repo_name: DaviBarbosaMedeiros/Springmass-Instructions
-repo_url: https://github.com/DaviBarbosaMedeiros/Springmass-Instructions
+repo_url: https://github.com/DaviBarbosaMedeiros/Spring-Mass-Collector
 
 copyright: Copyright &copy; 2026 Davi Barbosa de Medeiros
 
