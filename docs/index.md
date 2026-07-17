@@ -3,7 +3,7 @@
 ## Um sistema didático e de baixo custo para aquisição, exibição e transferência de dados de posição em experimentos massa-mola amortecidos.
 
 <figure markdown>
-  ![Protótipo funcional do Spring-Mass Collector](assets/images/caixa.jpg){ width="850" }
+  ![Protótipo funcional do Spring-Mass Collector](assets/images/5.1.1-Setup_Superior.png){ width="850" }
   <figcaption>Protótipo funcional do Spring-Mass Collector utilizado para aquisição de dados em experimentos massa-mola.</figcaption>
 </figure>
 
@@ -150,4 +150,4 @@ Entre os principais pontos de relevância estão:
 
 ## Próximos passos
 
-Para entender o funcionamento geral da caixa coletora, comece pela seção **Getting Started**. Em seguida, consulte as páginas de **Hardware** e **Software** para compreender como os componentes físicos e lógicos do sistema foram organizados.
+Para entender o funcionamento geral da caixa coletora, comece pela seção **Getting Started**. Em seguida, consulte as páginas de **Mechanical Design**, **Electronic** e **Software** para compreender como a estrutura física, circuito e sistema lógico foram organizados.

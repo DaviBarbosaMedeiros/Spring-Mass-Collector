@@ -148,7 +148,7 @@ O firmware é organizado em modos de funcionamento. Cada modo define o comportam
 | Default       | apresenta o menu principal               |
 | Calibração    | define a posição inicial de referência   |
 | Coleta        | mede e armazena os dados de posição      |
-| Transferência | envia os dados armazenados por Bluetooth |
+| Transferência | envia os dados armazenados               |
 
 Essa estrutura permite que o sistema funcione como uma máquina de estados, tornando o firmware mais organizado e facilitando futuras modificações.
 
@@ -156,9 +156,9 @@ Essa estrutura permite que o sistema funcione como uma máquina de estados, torn
 
 ## Transferência dos dados
 
-Após a coleta, os dados podem ser transferidos por Bluetooth para um dispositivo externo.
+Após a coleta, os dados podem ser transferidos por Bluetooth para um dispositivo externo ou por meio de uma conexão cabeada.
 
-Nos testes do projeto, foi utilizado o aplicativo **Serial Bluetooth Terminal**, que permite receber os dados enviados pela ESP32 e salvá-los em arquivo `.txt`.
+Nos testes do projeto, foi utilizado o aplicativo **Serial Bluetooth Terminal**, que permite receber os dados enviados pela ESP32 e salvá-los em arquivo `.txt`. E também foi-se utilizado o próprio app do **Arduino IDE**, copiando o output gerado no seu próprio terminal, após isso criar um arquivo `.txt` com o mesmo.
 
 !!! note "Aplicativo de terminal Bluetooth"
 O Serial Bluetooth Terminal foi utilizado como aplicativo de referência durante os testes, mas o sistema pode ser usado com outros terminais Bluetooth compatíveis.

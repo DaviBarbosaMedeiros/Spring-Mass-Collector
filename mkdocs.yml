@@ -49,8 +49,8 @@ theme:
     - toc.follow
     - search.suggest
     - search.highlight
-    - content.code.copy
-    - content.code.select
+    # - content.code.copy
+    # - content.code.select
     - content.tabs.link
 
 plugins:
@@ -88,12 +88,21 @@ markdown_extensions:
 
   - pymdownx.arithmatex:
       generic: true
+      inline_syntax:
+        - dollar
+        - round
+      block_syntax:
+        - dollar
+        - square
+        - begin
+      smart_dollar: true
   
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_javascript:
+  - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 extra:
@@ -115,42 +124,50 @@ nav:
       - Damped Oscillator: theory/damped-oscillator.md
       - Data Analysis: theory/data-analysis.md
 
-  - Hardware:
-      - Overview: hardware/overview.md
-      - Components: hardware/components.md
-      - Distance Sensor: hardware/distance-sensor.md
-      - LCD and Buttons: hardware/interface.md
-      - Circuit: hardware/circuit.md
-      - Calibration: hardware/calibration.md
+  # - Hardware:
+  #     - Overview: hardware/overview.md
+  #     - Components: hardware/components.md
+  #     - Distance Sensor: hardware/distance-sensor.md
+  #     - LCD and Buttons: hardware/interface.md
+  #     - Circuit: hardware/circuit.md
+  #     - Calibration: hardware/calibration.md
 
   - Mechanical Design:
-      - Overview: mechanical-design/overview.md
+      # - Overview: mechanical-design/overview.md
       - Structure: mechanical-design/structure.md
       - 3D Printed Parts: mechanical-design/3d-printed-parts.md
       - Assembly: mechanical-design/assembly.md
 
+  - Electronic:
+      - Schematic: electronics/schematic.md
+      - Microcontroller: electronics/microcontroller.md
+      - Distance Sensor: electronics/distance-sensor.md
+      - LCD and Buttons: electronics/interface.md
+
   - Software:
-      - Overview: software/overview.md
+      # - Overview: software/overview.md
       - Firmware Architecture: software/architecture.md
       - Code Structure: software/code-structure.md
       - Operation Modes: software/operation-modes.md
       - Data Storage: software/data-storage.md
       - Bluetooth Transfer: software/bluetooth-transfer.md
 
-  - Experiments:
-      - Overview: experiments/overview.md
-      - Data Collection: experiments/data-collection.md
-      - Data Transfer: experiments/data-transfer.md
-      - Results: experiments/results.md
+  # - Experiments:
+  #     - Overview: experiments/overview.md
+  #     - Data Collection: experiments/data-collection.md
+  #     - Data Transfer: experiments/data-transfer.md
+  #     - Results: experiments/results.md
 
   - Developer Guide:
-      - Setup: developer-guide/setup.md
-      - Project Structure: developer-guide/project-structure.md
-      - Build and Deploy: developer-guide/build-and-deploy.md
-      - Troubleshooting: developer-guide/troubleshooting.md
+      - Requirements: developer-guide/requirements.md
+      - Budget: developer-guide/budget.md
+      - Experiment Setup: developer-guide/setup.md
+      # - Project Structure: developer-guide/project-structure.md
+      # - Build and Deploy: developer-guide/build-and-deploy.md
+      # - Troubleshooting: developer-guide/troubleshooting.md
 
-  - Project:
-      - Requirements: project/requirements.md
-      - Timeline: project/timeline.md
-      - Budget: project/budget.md
-      - Future Work: project/future-work.md
+  # - Project:
+  #     - Requirements: project/requirements.md
+  #     - Timeline: project/timeline.md
+  #     - Budget: project/budget.md
+  #     - Future Work: project/future-work.md
